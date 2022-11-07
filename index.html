@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div id="addnumber" >
+        <h2 class="text-center">BÀI TẬP JAVASCRIPT BUỔI 7</h2>
+        <div class="row d-block">
+          <div class="form-group">
+            <label for="array_input_value">Nhập dữ liệu</label>
+            <input
+              type="number"
+              name="array_input_value"
+              id="array_input_value"
+              class="form-control"
+              placeholder="Nhập vào dãy số"
+              aria-describedby="helpId"
+            />
+            <small id="helpId" class="text-muted"
+              >Ví dụ: -5, 1 , 5, 7, 10</small
+            >
+          </div>
+          <button class="btn btn-secondary" id="array_button">Thêm</button>
+          <p id="array_result">Hiển thị dãy số bạn đã nhập tại đây</p>
+          <div id="contents"></div>
+        </div>
+     
+      <div class="container" id="result">          
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Câu hỏi</th>
+              <th></th>
+              <th>Hiển thị kết quả</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1. Tổng các số dương trong mảng?</td>
+              <td>
+                <button class="btn btn-success">Kiểm tra</button>
+              </td>
+              <td id="answer00"></td>
+            </tr>
+            <tr>
+                <td>2. Đếm có bao nhiêu số dương trong mảng?</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer01"></td>
+              </tr>
+              <tr>
+                <td>3. Tìm số nhỏ nhất trong mảng?</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer02"></td>
+              </tr>
+              <tr>
+                <td>4. Tìm số dương nhỏ nhất trong mảng?</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer03"></td>
+              </tr>
+              <tr>
+                <td>5. Tìm số chẵn cuối cùng trong mảng, Nếu mảng không có giá trị chẵn thì trả về -1.</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer04"></td>
+              </tr>
+              <tr>
+                <td>6. Đổi chỗ 2 giá trị trong mảng theo vị trí (cho nhập vào 2 vị trí muốn đổi chỗ giá trị).</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer05"></td>
+              </tr>
+              <tr>
+                <td>7. Sắp xếp mảng theo thứ tự tăng dần.</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer06"></td>
+              </tr>
+              <tr>
+                <td>8. Tìm số nguyên tố đầu tiên trong mảng. nếu mảng không có số nguyên tố thì trả về -1.</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer07"></td>
+              </tr>
+              <tr>
+                <td>9. Nhập thêm một mảng số thực, tìm xem trong mảng có bao nhiêu số nguyên?</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer08"></td>
+              </tr>
+              <tr>
+                <td>10. So sánh sô lượng số dương và số lượng số âm xem số nào nhiều hơn?</td>
+                <td>
+                  <button class="btn btn-success">Kiểm tra</button>
+                </td>
+                <td id="answer09"></td>
+              </tr>
+            </div>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
